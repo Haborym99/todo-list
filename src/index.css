@@ -45,7 +45,6 @@ button {
   line-height: normal;
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;
-  -webkit-appearance: none;
 }
 button::-moz-focus-inner {
   border: 0;
@@ -63,9 +62,10 @@ textarea {
 button,
 input {
   overflow: visible;
+  border-radius: 10px
 }
 input[type="text"] {
-  border-radius: 0;
+  border-radius: 10px;
 }
 body {
   width: 100%;
@@ -92,9 +92,17 @@ body {
   border: 0.2rem solid #4d4d4d;
   cursor: pointer;
   text-transform: capitalize;
+  box-shadow: 5px -4px rgba(0, 0, 0, 0.3);
 }
+.btn:hover{
+  box-shadow: inset 5px -5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn[aria-pressed="true"]{
+  box-shadow: inset 5px -5px 5px rgba(0, 0, 0, 0.2);
+}
+
 .btn.toggle-btn {
-  border-width: 1px;
   border-color: #d3d3d3;
 }
 .btn.toggle-btn[aria-pressed="true"] {
@@ -111,7 +119,7 @@ body {
 }
 .btn__primary {
   color: #fff;
-  background-color: #000;
+  background-color: #505050;
 }
 .btn-group {
   display: flex;
@@ -164,7 +172,8 @@ body {
   margin: 2rem 0 4rem 0;
   padding: 1rem;
   position: relative;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 2.5rem 5rem 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px
 }
 @media screen and (min-width: 550px) {
   .todoapp {

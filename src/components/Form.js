@@ -8,7 +8,7 @@ export default function Form(props) {
   function handleSubmit(e) {
     e.preventDefault();
     //!Prevent dumb input with regex
-    if (name[0] === " ") {
+    if (name[0] === " " || name[0] === "") {
       alert("Wrong character!");
       return;
     } else {
@@ -31,6 +31,7 @@ export default function Form(props) {
         autoComplete="off"
         value={name}
         onChange={handleChange}
+        placeholder="Enter your task here"
       />
       <button type="submit" className="btn btn__primary btn__lg">
         Add
