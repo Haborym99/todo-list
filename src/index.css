@@ -120,6 +120,7 @@ body {
 .btn__primary {
   color: #fff;
   background-color: #505050;
+  margin-bottom: 10px;
 }
 .btn-group {
   display: flex;
