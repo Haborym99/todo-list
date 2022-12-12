@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^4.0.0",
     "nanoid": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -14,7 +15,7 @@
   "devDependencies": {
     "react-scripts": "5.0.1"
   },
-  "homepage": "https://Haborym99.github.io/lenomdurepo",
+  "homepage": "https://Haborym99.github.io/todo-list",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -32,7 +33,7 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead", 
+      "not dead",
       "not op_mini all"
     ],
     "development": [
