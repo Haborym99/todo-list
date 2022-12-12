@@ -7,7 +7,6 @@ export default function Form(props) {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    //!Prevent dumb input with regex
     if (name[0] === " " || name[0] === "") {
       alert("Wrong character!");
       return;
